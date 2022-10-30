@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@base_size: 10px;
+@font_size: 2.5 * @base_size;
+
+header {
+  font-size: 5*@base_size;
+  color: darkred;
+  text-transform: uppercase;
+  text-align: center;
+  margin: @base_size;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 45 * @base_size;
+  margin: @base_size;
+  padding: 0.5 * @base_size;
+  font-size: @font_size;
+
+  & > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5 * @base_size;
+
+    & > label {
+      width: 10 * @base_size;
+    }
+
+    & > input {
+      display: block;
+      font-size: @font_size;
+      padding: @base_size;
+    }
+
+    & > button {
+      font-size: @font_size;
+      width: 15 * @base_size;
+      padding: 0.5 * @base_size;
+      color: white;
+
+      &[type='reset'] {
+        background-color: red;
+      }
+
+      &[type='submit'] {
+        background-color: blue;
+      }
+    }
+  }
+}
+
+#output {
+  font-size: 2 * @font_size;
+  margin: @base_size;
+  padding: @base_size;
+}

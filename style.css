@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  font-size: 50px;
+  color: darkred;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: 10px;
+  padding: 5px;
+  font-size: 25px;
+}
+#form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+#form > div > label {
+  width: 100px;
+}
+#form > div > input {
+  display: block;
+  font-size: 25px;
+  padding: 10px;
+}
+#form > div > button {
+  font-size: 25px;
+  width: 150px;
+  padding: 5px;
+  color: white;
+}
+#form > div > button[type='reset'] {
+  background-color: red;
+}
+#form > div > button[type='submit'] {
+  background-color: blue;
+}
+#output {
+  font-size: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
